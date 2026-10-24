@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gap="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KONTROL ORANG TUA"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="#FFF3E0"
+            android:text="Memeriksa status..." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kode rahasia (kirim via SMS dari HP orang tua):"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etKodeLock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kode untuk KUNCI LAYAR" />
+
+        <EditText
+            android:id="@+id/etKodeLampu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kode untuk SENTER KEDIP 2 MENIT" />
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIMPAN KODE" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD" />
+
+        <Button
+            android:id="@+id/btnAktifkanAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. AKTIFKAN DEVICE ADMIN"
+            android:backgroundTint="#1565C0" />
+
+        <Button
+            android:id="@+id/btnTestLock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEST: Kunci Layar Sekarang" />
+
+        <Button
+            android:id="@+id/btnTestLampu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEST: Senter Kedip 2 Menit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cara pakai:\n1. Install APK ini di HP anak.\n2. Buka aplikasinya, ganti kode rahasia, lalu tekan AKTIFKAN DEVICE ADMIN.\n3. Izinkan SMS & Kamera saat diminta.\n4. Dari HP orang tua, kirim SMS biasa isi kode tersebut ke nomor HP anak.\n5. HP anak langsung mengunci layar / menyalakan senter kedip — tanpa perlu dibuka."
+            android:padding="8dp"
+            android:textSize="13sp"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+</ScrollView>

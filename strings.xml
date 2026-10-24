@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kontrol Ortu</string>
+    <string name="admin_label">Kontrol Orang Tua</string>
+    <string name="admin_desc">Mengizinkan orang tua mengunci layar perangkat ini dari jarak jauh via SMS.</string>
+</resources>
